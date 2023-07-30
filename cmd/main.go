@@ -73,10 +73,11 @@ func main() {
 					}
 					log.Infof("Output amount (in wei): %s", outputAmount.String())
 					if c.Bool("format") {
-						token1Decimal, err := ethService.GetERC20Decimals(ctx, token1)
+						token1Decimal, err := ethService.GetERC20Decimals(c.Context, token1)
 						if err != nil {
 							return err
 						}
+						
 						log.Infof("Output amount (to decimal): %s", utils.ToDecimal(outputAmount, int(token1Decimal)))
 					}
 					return nil
