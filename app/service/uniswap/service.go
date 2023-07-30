@@ -48,7 +48,3 @@ func (s *Service) sortTokens(tkn0, tkn1 common.Address) (common.Address, common.
 
 	return tkn0, tkn1
 }
-
-/**
-go run cmd/main.go outputAmount -inputToken=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 -outputToken=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 -pair=0xbb2b8038a1640196fbe3e38816f3e67cba72d940 -inputAmount=6366511 -format=true
-*/
